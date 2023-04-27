@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "seaborgium",
+  "version": "${version}",
+  "name": "Seaborgium",
+  "description": "Seaborgium is a rendering focused optimization mod.",
+  "authors": [],
+  "contact": {},
+  "license": "All Rights Reserved",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.undefinedbhvr.seaborgium.fabric.SeaborgiumFabric"
+    ]
+  },
+  "mixins": [
+    "seaborgium.mixins.json",
+    "seaborgium-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "minecraft": ">=1.19.2"
+  }
+}
