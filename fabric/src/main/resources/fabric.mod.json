@@ -16,7 +16,8 @@
   },
   "mixins": [
     "seaborgium.mixins.json",
-    "seaborgium-common.mixins.json"
+    "seaborgium-common.mixins.json",
+    "seaborgium-compat-iris.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.14.19",

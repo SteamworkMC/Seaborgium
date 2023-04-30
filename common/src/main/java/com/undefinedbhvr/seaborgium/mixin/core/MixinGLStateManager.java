@@ -5,12 +5,10 @@ import com.mojang.blaze3d.systems.RenderSystem;
 import com.undefinedbhvr.seaborgium.cache.CachedShaderProgram;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
-
-import java.util.HashMap;
+import static com.undefinedbhvr.seaborgium.Seaborgium.get_cached_shaders;
 
 @Mixin(GlStateManager.class)
 public class MixinGLStateManager {
-    private static final HashMap<Integer, CachedShaderProgram> cached_shaders = new HashMap<>();
     /**
      * @author UndefinedBHVR
      * @reason Implements a basic cache for _glGetUniformLocation().
@@ -18,7 +16,7 @@ public class MixinGLStateManager {
     @Overwrite
     public static int _glGetUniformLocation(int i, CharSequence charSequence) {
         RenderSystem.assertOnRenderThread();
-        return cached_shaders.computeIfAbsent(i, v -> new CachedShaderProgram(i)).get_uniform_location((String) charSequence);
+        return get_cached_shaders().computeIfAbsent(i, v -> new CachedShaderProgram(i)).get_uniform_location((String) charSequence);
     }
 
 }

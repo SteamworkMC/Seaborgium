@@ -18,7 +18,8 @@ loom {
         // this will be added to the jar manifest as well!
         mixinConfigs = [
                 "seaborgium-common.mixins.json",
-                "seaborgium.mixins.json"
+                "seaborgium.mixins.json",
+                "seaborgium-compat-iris.mixins.json"
         ]
 
         // missing access transformers?
