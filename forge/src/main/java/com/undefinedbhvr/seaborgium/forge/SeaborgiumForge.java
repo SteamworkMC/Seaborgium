@@ -7,6 +7,6 @@ import net.minecraftforge.fml.common.Mod;
 public class SeaborgiumForge {
     public SeaborgiumForge() {
         Seaborgium.init();
-        Seaborgium.LOGGER.info("Loader detected: Fabric");
+        Seaborgium.LOGGER.info("Loader detected: Forge");
     }
 }
