@@ -12,7 +12,7 @@ import java.util.concurrent.CompletableFuture;
 @Mixin(Minecraft.class)
 public class MixinMinecraft {
     @Inject(method = "reloadResourcePacks(Z)Ljava/util/concurrent/CompletableFuture;", at = @At("HEAD"))
-    private static void sb$reloadResourcePacks(boolean bl, CallbackInfoReturnable<CompletableFuture<Void>> cir) {
+    private void sb$reloadResourcePacks(boolean bl, CallbackInfoReturnable<CompletableFuture<Void>> cir) {
         Seaborgium.invalidate_shaders();
     }
 }
