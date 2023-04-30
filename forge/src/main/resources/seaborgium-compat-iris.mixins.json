@@ -1,0 +1,16 @@
+{
+  "package": "com.undefinedbhvr.seaborgium.compat.iris.mixin",
+  "plugin": "com.undefinedbhvr.seaborgium.forge.compat_plugins.iris.SeaborgiumIrisCompatPlugin",
+  "required": true,
+  "minVersion": "0.8",
+  "compatibilityLevel": "JAVA_8",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "conformVisibility": true
+  },
+  "client": [
+    "iris.MixinIris"
+  ]
+}
