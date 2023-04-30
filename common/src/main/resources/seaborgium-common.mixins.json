@@ -7,7 +7,7 @@
   ],
   "client": [
     "core.MixinGLStateManager",
-    "core.MixinMinecraft"
+    "core.MixinResourceLoadStateTracker"
   ],
   "injectors": {
     "defaultRequire": 1

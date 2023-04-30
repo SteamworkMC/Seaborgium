@@ -8,5 +8,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 public class SeaborgiumForge {
     public SeaborgiumForge() {
         Seaborgium.init();
+        Seaborgium.LOGGER.info("Loader detected: Fabric");
     }
 }
