@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(value = Iris.class, remap = false)
 public class MixinIris {
-    @Inject(method = "toggleShaders", at = @At("HEAD"))
+    @Inject(method = "reload", at = @At("HEAD"))
     private static void sb$reload_uniform_locs(CallbackInfo ci) {
         Seaborgium.invalidate_shaders();
     };
