@@ -1,5 +1,6 @@
 package com.undefinedbhvr.seaborgium.fabric.compat_plugins.iris;
 
+import com.undefinedbhvr.seaborgium.Seaborgium;
 import net.fabricmc.loader.api.FabricLoader;
 import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
@@ -14,7 +15,7 @@ public class SeaborgiumIrisCompatPlugin implements IMixinConfigPlugin {
     public void onLoad(String mixinPackage) {
         iris_loaded = FabricLoader.getInstance().isModLoaded("iris");
         if(!iris_loaded) {
-            System.err.println("[Seaborgium] Iris was not found, not running compat mixins.");
+            Seaborgium.LOGGER.warn("Iris was not found, not running compat mixins.");
         }
     }
 

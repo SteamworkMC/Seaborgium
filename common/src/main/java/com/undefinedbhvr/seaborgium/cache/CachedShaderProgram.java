@@ -1,6 +1,5 @@
 package com.undefinedbhvr.seaborgium.cache;
 
-import com.mojang.blaze3d.platform.GlStateManager;
 import org.lwjgl.opengl.GL20;
 
 import java.util.HashMap;

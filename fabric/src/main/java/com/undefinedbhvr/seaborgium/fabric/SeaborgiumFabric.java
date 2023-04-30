@@ -7,5 +7,6 @@ public class SeaborgiumFabric implements ModInitializer {
     @Override
     public void onInitialize() {
         Seaborgium.init();
+        Seaborgium.LOGGER.info("Loader detected: Fabric");
     }
 }

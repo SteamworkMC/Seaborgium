@@ -5,6 +5,7 @@ import com.mojang.blaze3d.systems.RenderSystem;
 import com.undefinedbhvr.seaborgium.cache.CachedShaderProgram;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
+
 import static com.undefinedbhvr.seaborgium.Seaborgium.get_cached_shaders;
 
 @Mixin(GlStateManager.class)
