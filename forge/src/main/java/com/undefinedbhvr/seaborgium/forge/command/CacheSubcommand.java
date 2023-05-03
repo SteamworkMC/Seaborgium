@@ -7,6 +7,7 @@ import com.undefinedbhvr.seaborgium.Seaborgium;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TextComponent;
 
 public class CacheSubcommand {
     public static ArgumentBuilder<CommandSourceStack, ?> command() {
@@ -16,7 +17,7 @@ public class CacheSubcommand {
     public static int execute(CommandContext<CommandSourceStack> context) {
         RenderSystem.assertOnRenderThread();
         Seaborgium.invalidate_shaders();
-        context.getSource().sendSuccess(Component.literal("Invalidated shader cache"), false);
+        context.getSource().sendSuccess(new TextComponent("Invalidated shader cache"), false);
         return 1;
     }
 }

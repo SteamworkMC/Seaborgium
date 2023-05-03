@@ -4,9 +4,10 @@ import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.brigadier.builder.ArgumentBuilder;
 import com.mojang.brigadier.context.CommandContext;
 import com.undefinedbhvr.seaborgium.Seaborgium;
-import net.fabricmc.fabric.api.client.command.v2.ClientCommandManager;
-import net.fabricmc.fabric.api.client.command.v2.FabricClientCommandSource;
+import net.fabricmc.fabric.api.client.command.v1.ClientCommandManager;
+import net.fabricmc.fabric.api.client.command.v1.FabricClientCommandSource;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TextComponent;
 
 public class CacheSubcommand {
     public static ArgumentBuilder<FabricClientCommandSource, ?> command() {
@@ -16,7 +17,7 @@ public class CacheSubcommand {
     public static int execute(CommandContext<FabricClientCommandSource> context) {
         RenderSystem.assertOnRenderThread();
         Seaborgium.invalidate_shaders();
-        context.getSource().sendFeedback(Component.literal("Invalidating shader cache"));
+        context.getSource().sendFeedback(new TextComponent("Invalidating shader cache"));
         return 1;
     }
 }
