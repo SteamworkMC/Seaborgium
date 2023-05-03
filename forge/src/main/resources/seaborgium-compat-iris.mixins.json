@@ -11,6 +11,7 @@
     "conformVisibility": true
   },
   "client": [
-    "iris.MixinIris"
+    "iris.MixinIris",
+    "iris.MixinPipelineManager"
   ]
 }
