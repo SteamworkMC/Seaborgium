@@ -13,7 +13,5 @@ public class MixinIris {
     private static void sb$reload_uniform_locs(CallbackInfo ci) {
         Seaborgium.LOGGER.warn("Shader cache needs invalidated. Reason: Iris Shader Reload");
         Seaborgium.invalidate_shaders();
-    }
-
-    ;
+    };
 }

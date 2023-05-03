@@ -32,7 +32,7 @@ configurations {
 dependencies {
     modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
     modApi "net.fabricmc.fabric-api:fabric-api:${rootProject.fabric_api_version}"
-    modLocalRuntime("maven.modrinth:sodium:mc1.19.4-0.4.10")
+    modLocalRuntime("maven.modrinth:sodium:mc1.19.4-0.4.11")
     modLocalRuntime("maven.modrinth:entityculling:1.6.2-1.19.4")
     modLocalRuntime("maven.modrinth:lithium:mc1.19.4-0.11.1")
     modLocalRuntime("maven.modrinth:spark:1.10.34-fabric")

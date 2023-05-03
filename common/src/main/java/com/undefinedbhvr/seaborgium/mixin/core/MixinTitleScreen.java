@@ -12,8 +12,8 @@ public class MixinTitleScreen {
     // We need to invalidate the cache at the title screen, to ensure we have a clean cache by the time world loading starts.
     // Hopefully.
     @Inject(
-            method = "<init>(ZLnet/minecraft/client/gui/components/LogoRenderer;)V",  // the jvm bytecode signature for the constructor
-            at = @At("TAIL")  // signal that this void should be run at the method HEAD, meaning the first opcode
+            method = "<init>(Z)V",
+            at = @At("TAIL")
     )
     private void init(CallbackInfo info) {
         Seaborgium.LOGGER.warn("Shader cache needs invalidated. Reason: Title Screen Created.");
