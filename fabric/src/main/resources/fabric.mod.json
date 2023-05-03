@@ -10,7 +10,7 @@
   "icon": "icon.png",
   "environment": "*",
   "entrypoints": {
-    "main": [
+    "client": [
       "com.undefinedbhvr.seaborgium.fabric.SeaborgiumFabric"
     ]
   },

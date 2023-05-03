@@ -11,10 +11,11 @@ import java.util.Set;
 
 public class SeaborgiumIrisCompatPlugin implements IMixinConfigPlugin {
     private static boolean iris_loaded = false;
+
     @Override
     public void onLoad(String mixinPackage) {
         iris_loaded = FabricLoader.getInstance().isModLoaded("iris");
-        if(!iris_loaded) {
+        if (!iris_loaded) {
             Seaborgium.LOGGER.warn("Iris was not found, not running compat mixins.");
         }
     }

@@ -11,6 +11,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class MixinResourceLoadStateTracker {
     @Inject(method = "finishReload", at = @At("HEAD"))
     private void sb$reloadResourcePacks(CallbackInfo ci) {
+        Seaborgium.LOGGER.warn("Shader cache needs invalidated. Reason: Resource Pack Reload");
         Seaborgium.invalidate_shaders();
     }
 }
