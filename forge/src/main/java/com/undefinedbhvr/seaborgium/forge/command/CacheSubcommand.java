@@ -6,7 +6,6 @@ import com.mojang.brigadier.context.CommandContext;
 import com.undefinedbhvr.seaborgium.Seaborgium;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
-import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextComponent;
 
 public class CacheSubcommand {

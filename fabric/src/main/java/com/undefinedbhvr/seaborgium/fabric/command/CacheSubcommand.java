@@ -6,7 +6,6 @@ import com.mojang.brigadier.context.CommandContext;
 import com.undefinedbhvr.seaborgium.Seaborgium;
 import net.fabricmc.fabric.api.client.command.v1.ClientCommandManager;
 import net.fabricmc.fabric.api.client.command.v1.FabricClientCommandSource;
-import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextComponent;
 
 public class CacheSubcommand {
