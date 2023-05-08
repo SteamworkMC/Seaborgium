@@ -1,0 +1,22 @@
+name: Feature Request
+description: Use this template if you're suggesting a new feature or change to be added
+labels:
+  - C-Feature-Request
+  - S-Needs-Work
+body:
+  - type: input
+    id: feature
+    attributes:
+      label: What feature?
+      description: >-
+        Please describe as briefly as possible what the feature you'd like added is.
+      placeholder: 'Example: Implement the ability to make GUIs only re-render when changed'
+  - type: textarea
+    id: details
+    attributes:
+      label: Give us more details.
+      description: >-
+        Please describe in detail how the change should optimally function, as well as the
+        reason for this change.
+      placeholder: 'Example: This change will help reduce hardware strain caused by the GUI'
+
