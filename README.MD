@@ -1,3 +1,6 @@
+# OBSOLETE
+### As of July 2023, this mod is obsolete. Sodium has implemented a uniform cache into their own codebase, making the existence of this mod pointless.
+
 # Seaborgium
 Seaborgium is a free and open source optimization mod for Minecraft. It improves the rendering performance of the game by implementing optimizations that are overlooked by other mods.
 
